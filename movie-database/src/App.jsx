@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SearchBar from "./components/SearchBar";
+import Home from "./components/Home";
 import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<SearchBar />} />
+        <Route path="/" element={<Home />} />
         <Route path="/movie/:id" element={<MovieDetails />} />
       </Routes>
     </Router>

@@ -23,13 +23,13 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="py-2 px-2 w-1/2 m-auto shadow-xl rounded-xl">
-      <div className="flex items-center">
-        <FaSearch className="text-gray-400" />
+    <div className="py-1 px-2 w-1/2 m-auto shadow-xl rounded-xl">
+      <div className="flex items-center px-2">
+        <FaSearch className="text-gray-400 " />
         <input
           type="text"
           placeholder="Movie Search"
-          className="bg-transparent font-bold focus:outline-none p-2 w-full"
+          className="bg-transparent font-bold focus:outline-none px-2 w-full"
           value={input}
           onChange={(e) => {
             const value = e.target.value;
