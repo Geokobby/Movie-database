@@ -1,11 +1,16 @@
-import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SearchBar from "./components/SearchBar";
+import MovieDetails from "./components/MovieDetails";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1 className='text-center text-blue-700 text-3xl font-bold underline'>Hello World </h1>
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<SearchBar />} />
+        <Route path="/movie/:id" element={<MovieDetails />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
