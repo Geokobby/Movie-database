@@ -1,12 +1,14 @@
-# React + Vite
+Built a Movie database for movie rating and reviews.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+With the use of OMDBAPI http://www.omdbapi.com/, This movie database was built to help movie loves know the rating and summaries of movies before they watch them.
 
-Currently, two official plugins are available:
+For developing this project developer language such as React + Vite, HTML, Tailwind CSS and JavaScript was used to develop the web app.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Landing page comprices of the components like the Home.jsx and the searchbar.jsx to help view know which movie to go for.
 
-## Expanding the ESLint configuration
+Components:
+Home.jsx showcase movies rated 6+ by OMDb and refresh each time a user check in and out.
+Whereas Searchbar.jsx allows user to search for their own titles to know about their rate and summary of a movie.
+MovieDetials.jsx showcase a card which holds all the details of a selected movie.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This webapp is meant to help user know more about their movie choices before they watch them.
